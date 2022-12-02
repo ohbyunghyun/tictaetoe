@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tictactoe</title>
+
+    <style>
+    .big {
+        margin: 10px auto;
+        border: 1px solid black;
+        width: 606px;
+        height: 606px;
+    }        
+
+    .small {
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        float: left;
+        font-size: 30px;
+        text-align: center;
+        line-height: 180px;
+    }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="big">
+        <div class="small" id="a"></div>
+        <div class="small" id="b"></div>
+        <div class="small" id="c"></div>
+        <div class="small" id="d"></div>
+        <div class="small" id="e"></div>
+        <div class="small" id="f"></div>
+        <div class="small" id="g"></div>
+        <div class="small" id="h"></div>
+        <div class="small" id="ii"></div>
+    </div>    
+</body>
+
+<script>
+
+    var a = document.getElementById("a");
+    var b = document.getElementById("b");
+    var c = document.getElementById("c");
+    var d = document.getElementById("d");
+    var e = document.getElementById("e");
+    var f = document.getElementById("f");
+    var g = document.getElementById("g");
+    var h = document.getElementById("h");
+    var ii = document.getElementById("ii");
+    var i = 0;    var aa = 0;    var bb = 0;    var cc = 0;
+    var dd = 0;    var ee = 0;    var ff = 0;    var gg = 0;
+    var hh = 0;    var iii = 0;
+    // if (a == "O" && a == "X") {
+    //     alert("중복입니다.")
+    // }
+
+    a.onclick = function() {
+        aa++;
+        console.log(i);
+        if (aa > 1){
+            alert("중복");
+        } else if (i%2 == 0) {
+            console.log("짝")
+            a.innerHTML = "O";
+            i++;
+        } else {
+            console.log("홀")
+            a.innerHTML = "X";
+            i++;
+        }
+    }
+
+    b.onclick = function() {
+        bb++;
+        console.log(i);
+        if (bb > 1){
+            alert("중복");
+        } else if (i%2 == 0) {
+            console.log("짝")
+            b.innerHTML = "O";
+            i++;
+        } else {
+            console.log("홀")
+            b.innerHTML = "X";
+            i++;
+        }
+    }
+
+    c.onclick = function() {
+        cc++;
+        console.log(i);
+        if (cc > 1){
+            alert("중복");
+        } else if (i%2 == 0) {
+            console.log("짝")
+            c.innerHTML = "O";
+            i++;
+        } else {
+            console.log("홀")
+            c.innerHTML = "X";
+            i++;
+        }
+    }
+
+   d.onclick = function() {
+        dd++;
+        console.log(i);
+        if (dd > 1){
+            alert("중복");
+        } else if (i%2 == 0) {
+            console.log("짝")
+            d.innerHTML = "O";
+            i++;
+        } else {
+            console.log("홀")
+            d.innerHTML = "X";
+            i++;
+        }
+    }
+
+    e.onclick = function() {
+        ee++;
+        console.log(i);
+        if (ee > 1){
+            alert("중복");
+        } else if (i%2 == 0) {
+            console.log("짝")
+            e.innerHTML = "O";
+            i++;
+        } else {
+            console.log("홀")
+            e.innerHTML = "X";
+            i++;
+        }
+    }
+
+    f.onclick = function() {
+        ff++;
+        console.log(i);
+        if (ff > 1){
+            alert("중복");
+        } else if (i%2 == 0) {
+            console.log("짝")
+            f.innerHTML = "O";
+            i++;
+        } else {
+            console.log("홀")
+            f.innerHTML = "X";
+            i++;
+        }
+    }
+
+    g.onclick = function() {
+        gg++;
+        console.log(i);
+        if (gg > 1){
+            alert("중복");
+        } else if (i%2 == 0) {
+            console.log("짝")
+            g.innerHTML = "O";
+            i++;
+        } else {
+            console.log("홀")
+            g.innerHTML = "X";
+            i++;
+        }
+    }
+
+    h.onclick = function() {
+        hh++;
+        console.log(i);
+        if (hh > 1){
+            alert("중복");
+        } else if (i%2 == 0) {
+            console.log("짝")
+            h.innerHTML = "O";
+            i++;
+        } else {
+            console.log("홀")
+            h.innerHTML = "X";
+            i++;
+        }
+    }
+
+    ii.onclick = function() {
+        
+        iii++;
+        console.log(i);
+        if (iii > 1){
+            alert("중복");
+        } else if (i%2 == 0) {
+            console.log("짝")
+            ii.innerHTML = "O";
+            i++;
+        } else {
+            console.log("홀")
+            ii.innerHTML = "X";
+            i++;
+        }
+    }
+
+</script>
+
+</html>
