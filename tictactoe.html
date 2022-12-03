@@ -19,9 +19,14 @@
         width: 200px;
         height: 200px;
         float: left;
-        font-size: 30px;
+        font-size: 60px;
         text-align: center;
         line-height: 180px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 50px;
     }
     </style>
 
@@ -38,8 +43,10 @@
         <div class="small" id="f"></div>
         <div class="small" id="g"></div>
         <div class="small" id="h"></div>
-        <div class="small" id="ii"></div>
+        <div class="small" id="ii"></div>        
     </div>    
+    <p id="p">O 턴</p>
+    <!-- <p id="pp">1P = O / 2P = X</p> -->
 </body>
 
 <script>
@@ -53,13 +60,24 @@
     var g = document.getElementById("g");
     var h = document.getElementById("h");
     var ii = document.getElementById("ii");
+
+    var p = document.getElementById("p");
+    var pp = document.getElementById("pp");
+
     var i = 0;    var aa = 0;    var bb = 0;    var cc = 0;
     var dd = 0;    var ee = 0;    var ff = 0;    var gg = 0;
     var hh = 0;    var iii = 0;
-    // if (a == "O" && a == "X") {
-    //     alert("중복입니다.")
-    // }
+    
+    var ax = 0; var ao = 0; var leftdaeo = 0; var leftdaex = 0; 
+    var aseroo = 0; var aserox = 0; var bseroo = 0; var bserox = 0;
+    var rightdaeo = 0; var rightdaex = 0; var cseroo = 0; var cserox = 0;
+    var ddo = 0; var ddx = 0; var go = 0; var gx = 0;
+    var win;
 
+
+// if (ao == 3) {
+//     alert("O 승리");
+// }    
     a.onclick = function() {
         aa++;
         console.log(i);
@@ -69,10 +87,59 @@
             console.log("짝")
             a.innerHTML = "O";
             i++;
+            p.innerHTML = "X 턴";
+            ao++;
+            leftdaeo++;
+            aseroo++;
+            console.log(ao, leftdaeo, aseroo);
+             if (ao > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (leftdaeo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (aseroo > 2) {
+                    p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         } else {
             console.log("홀")
             a.innerHTML = "X";
             i++;
+            p.innerHTML = "O 턴";
+            ax++;
+            leftdaex++;
+            aserox++;
+            console.log(ax, leftdaex, aserox);
+            
+            if (ax > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (leftdaex > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (aserox > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         }
     }
 
@@ -85,10 +152,44 @@
             console.log("짝")
             b.innerHTML = "O";
             i++;
+            p.innerHTML = "X 턴";
+            ao++;
+            bseroo++;
+            console.log(ao, bseroo);
+             if (ao > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (bseroo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         } else {
             console.log("홀")
             b.innerHTML = "X";
             i++;
+            p.innerHTML = "O 턴";
+            ax++;
+            bserox++;
+            console.log(ax, bserox);
+             if (ax > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (bserox > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         }
     }
 
@@ -101,10 +202,58 @@
             console.log("짝")
             c.innerHTML = "O";
             i++;
+            p.innerHTML = "X 턴";
+            ao++;
+            rightdaeo++;
+            cseroo++;
+            console.log(ao, rightdaeo, cseroo);
+             if (ao > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (rightdaeo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (cseroo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function () {
+                    win=confirm("O 승리, 다시하실?");
+                    window.location.reload();
+                }, 10);
+             }
         } else {
             console.log("홀")
             c.innerHTML = "X";
             i++;
+            p.innerHTML = "O 턴";
+            ax++;
+            rightdaex++;
+            cserox++;
+            console.log(ax, rightdaex, cserox);
+             if (ax > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (rightdaex > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (cserox > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function () {
+                    win=confirm("X 승리, 다시하실?");
+                    window.location.reload();
+                }, 10);
+             }
         }
     }
 
@@ -117,10 +266,44 @@
             console.log("짝")
             d.innerHTML = "O";
             i++;
+            p.innerHTML = "X 턴";
+            aseroo++;
+            ddo++;
+            console.log(aseroo, ddo);
+             if (aseroo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (ddo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         } else {
             console.log("홀")
             d.innerHTML = "X";
             i++;
+            p.innerHTML = "O 턴";
+            aserox++;
+            ddx++;
+            console.log(aserox, ddx);
+             if (aseroo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (ddx > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         }
     }
 
@@ -133,10 +316,72 @@
             console.log("짝")
             e.innerHTML = "O";
             i++;
+            p.innerHTML = "X 턴";
+            leftdaeo++;
+            bseroo++;
+            rightdaeo++;
+            ddo++;
+            console.log(leftdaeo, bseroo, rightdaeo, ddo);
+             if (leftdaeo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (bseroo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (rightdaeo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (ddo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         } else {
             console.log("홀")
             e.innerHTML = "X";
             i++;
+            p.innerHTML = "O 턴";
+            leftdaex++;
+            bserox++;
+            rightdaex++;
+            ddx++;
+            console.log(leftdaex, bserox, rightdaex, ddx);
+             if (leftdaex > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (bserox > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (rightdaex > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (ddx > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         }
     }
 
@@ -149,10 +394,44 @@
             console.log("짝")
             f.innerHTML = "O";
             i++;
+            p.innerHTML = "X 턴";
+            cseroo++;
+            ddo++;
+            console.log(cseroo, ddo);
+             if (cseroo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (ddo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         } else {
             console.log("홀")
             f.innerHTML = "X";
             i++;
+            p.innerHTML = "O 턴";
+            cserox++;
+            ddx++;
+            console.log(cserox, ddx);
+             if (cserox > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (ddx > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         }
     }
 
@@ -165,10 +444,58 @@
             console.log("짝")
             g.innerHTML = "O";
             i++;
+            p.innerHTML = "X 턴";
+            aseroo++;
+            rightdaeo++;
+            go++;
+            console.log(aseroo, rightdaeo, go);
+             if (aseroo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (rightdaeo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (go > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         } else {
             console.log("홀")
             g.innerHTML = "X";
             i++;
+            p.innerHTML = "O 턴";
+            aserox++;
+            rightdaex++;
+            gx++;
+            console.log(aserox, rightdaex, gx);
+             if (aserox > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (rightdaex > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (gx > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         }
     }
 
@@ -181,10 +508,44 @@
             console.log("짝")
             h.innerHTML = "O";
             i++;
+            p.innerHTML = "X 턴";
+            bseroo++;
+            go++;
+            console.log(bseroo, go);
+             if (bseroo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (go > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } 
         } else {
             console.log("홀")
             h.innerHTML = "X";
             i++;
+            p.innerHTML = "O 턴";
+            bserox++;
+            gx++;
+            console.log(bserox, gx);
+             if (bserox > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (gx > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } 
         }
     }
 
@@ -198,10 +559,58 @@
             console.log("짝")
             ii.innerHTML = "O";
             i++;
+            p.innerHTML = "X 턴";
+            leftdaeo++;
+            cseroo++;
+            go++;
+            console.log(leftdaeo, cseroo, go);
+             if (leftdaeo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (cseroo > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (go > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("O 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         } else {
             console.log("홀")
             ii.innerHTML = "X";
             i++;
+            p.innerHTML = "O 턴";
+            leftdaex++;
+            cserox++;
+            gx++;
+            console.log(leftdaex, cserox, gx);
+             if (leftdaex > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);                
+             } else if (cserox > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             } else if (gx > 2) {
+                p.innerHTML = "게임끝"
+                setTimeout(function (){
+                    win=confirm("X 승리, 다시하실?");    
+                    window.location.reload();
+                }, 10);
+             }
         }
     }
 
