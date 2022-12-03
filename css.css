@@ -1,0 +1,22 @@
+
+    .big {
+        margin: 10px auto;
+        border: 1px solid black;
+        width: 606px;
+        height: 606px;
+    }        
+
+    .small {
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        float: left;
+        font-size: 60px;
+        text-align: center;
+        line-height: 180px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 50px;
+    }
