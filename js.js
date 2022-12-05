@@ -35,7 +35,7 @@
             leftdaeo++;
             aseroo++;
             moo++;
-            console.log(ao, leftdaeo, aseroo);
+            //console.log(ao, leftdaeo, aseroo);
              if (ao > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -69,7 +69,7 @@
             leftdaex++;
             aserox++;
             moo++;
-            console.log(ax, leftdaex, aserox);
+            //console.log(ax, leftdaex, aserox);
             
             if (ax > 2) {
                 p.innerHTML = "게임끝"
@@ -112,7 +112,7 @@
             ao++;
             bseroo++;
             moo++;
-            console.log(ao, bseroo);
+            //console.log(ao, bseroo);
              if (ao > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -139,7 +139,7 @@
             ax++;
             bserox++;
             moo++;
-            console.log(ax, bserox);
+            //console.log(ax, bserox);
              if (ax > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -175,7 +175,7 @@
             rightdaeo++;
             cseroo++;
             moo++;
-            console.log(ao, rightdaeo, cseroo);
+            //console.log(ao, rightdaeo, cseroo);
              if (ao > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -209,7 +209,7 @@
             rightdaex++;
             cserox++;
             moo++;
-            console.log(ax, rightdaex, cserox);
+            //console.log(ax, rightdaex, cserox);
              if (ax > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -250,7 +250,7 @@
             aseroo++;
             ddo++;
             moo++;
-            console.log(aseroo, ddo);
+            //console.log(aseroo, ddo);
              if (aseroo > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -277,7 +277,7 @@
             aserox++;
             ddx++;
             moo++;
-            console.log(aserox, ddx);
+            //console.log(aserox, ddx);
              if (aseroo > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -314,7 +314,7 @@
             rightdaeo++;
             ddo++;
             moo++;
-            console.log(leftdaeo, bseroo, rightdaeo, ddo);
+            //console.log(leftdaeo, bseroo, rightdaeo, ddo);
              if (leftdaeo > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -355,7 +355,7 @@
             rightdaex++;
             ddx++;
             moo++;
-            console.log(leftdaex, bserox, rightdaex, ddx);
+            //console.log(leftdaex, bserox, rightdaex, ddx);
              if (leftdaex > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -402,7 +402,7 @@
             cseroo++;
             ddo++;
             moo++;
-            console.log(cseroo, ddo);
+            //console.log(cseroo, ddo);
              if (cseroo > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -429,7 +429,7 @@
             cserox++;
             ddx++;
             moo++;
-            console.log(cserox, ddx);
+            //console.log(cserox, ddx);
              if (cserox > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -465,7 +465,7 @@
             rightdaeo++;
             go++;
             moo++;
-            console.log(aseroo, rightdaeo, go);
+            //console.log(aseroo, rightdaeo, go);
              if (aseroo > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -499,7 +499,7 @@
             rightdaex++;
             gx++;
             moo++;
-            console.log(aserox, rightdaex, gx);
+            //console.log(aserox, rightdaex, gx);
              if (aserox > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -540,7 +540,7 @@
             bseroo++;
             go++;
             moo++;
-            console.log(bseroo, go);
+            //console.log(bseroo, go);
              if (bseroo > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -567,7 +567,7 @@
             bserox++;
             gx++;
             moo++;
-            console.log(bserox, gx);
+            //console.log(bserox, gx);
              if (bserox > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -604,7 +604,7 @@
             cseroo++;
             go++;
             moo++;
-            console.log(leftdaeo, cseroo, go);
+            //console.log(leftdaeo, cseroo, go);
              if (leftdaeo > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
@@ -638,7 +638,7 @@
             cserox++;
             gx++;
             moo++;
-            console.log(leftdaex, cserox, gx);
+            //console.log(leftdaex, cserox, gx);
              if (leftdaex > 2) {
                 p.innerHTML = "게임끝"
                 setTimeout(function (){
