@@ -21,6 +21,9 @@
     var ddo = 0; var ddx = 0; var go = 0; var gx = 0; var moo = 0;
     var win; var mooo;
 
+    const cursoro = document.querySelector("#cursoro");
+    const cursorx = document.querySelector("#cursorx");
+
     a.onclick = function() {
         aa++;
         console.log(i);
@@ -35,6 +38,8 @@
             leftdaeo++;
             aseroo++;
             moo++;
+            cursoro.style.display = 'none';
+            cursorx.style.display = 'block';
             //console.log(ao, leftdaeo, aseroo);
              if (ao > 2) {
                 p.innerHTML = "게임끝"
@@ -69,6 +74,8 @@
             leftdaex++;
             aserox++;
             moo++;
+            cursoro.style.display = 'block';
+            cursorx.style.display = 'none';
             //console.log(ax, leftdaex, aserox);
             
             if (ax > 2) {
@@ -112,6 +119,8 @@
             ao++;
             bseroo++;
             moo++;
+            cursoro.style.display = 'none';
+            cursorx.style.display = 'block';
             //console.log(ao, bseroo);
              if (ao > 2) {
                 p.innerHTML = "게임끝"
@@ -139,6 +148,8 @@
             ax++;
             bserox++;
             moo++;
+            cursoro.style.display = 'block';
+            cursorx.style.display = 'none';
             //console.log(ax, bserox);
              if (ax > 2) {
                 p.innerHTML = "게임끝"
@@ -175,6 +186,8 @@
             rightdaeo++;
             cseroo++;
             moo++;
+            cursoro.style.display = 'none';
+            cursorx.style.display = 'block';
             //console.log(ao, rightdaeo, cseroo);
              if (ao > 2) {
                 p.innerHTML = "게임끝"
@@ -209,6 +222,8 @@
             rightdaex++;
             cserox++;
             moo++;
+            cursoro.style.display = 'block';
+            cursorx.style.display = 'none';
             //console.log(ax, rightdaex, cserox);
              if (ax > 2) {
                 p.innerHTML = "게임끝"
@@ -250,6 +265,8 @@
             aseroo++;
             ddo++;
             moo++;
+            cursoro.style.display = 'none';
+            cursorx.style.display = 'block';
             //console.log(aseroo, ddo);
              if (aseroo > 2) {
                 p.innerHTML = "게임끝"
@@ -277,6 +294,8 @@
             aserox++;
             ddx++;
             moo++;
+            cursoro.style.display = 'block';
+            cursorx.style.display = 'none';
             //console.log(aserox, ddx);
              if (aseroo > 2) {
                 p.innerHTML = "게임끝"
@@ -314,6 +333,8 @@
             rightdaeo++;
             ddo++;
             moo++;
+            cursoro.style.display = 'none';
+            cursorx.style.display = 'block';
             //console.log(leftdaeo, bseroo, rightdaeo, ddo);
              if (leftdaeo > 2) {
                 p.innerHTML = "게임끝"
@@ -355,6 +376,8 @@
             rightdaex++;
             ddx++;
             moo++;
+            cursoro.style.display = 'block';
+            cursorx.style.display = 'none';
             //console.log(leftdaex, bserox, rightdaex, ddx);
              if (leftdaex > 2) {
                 p.innerHTML = "게임끝"
@@ -402,6 +425,8 @@
             cseroo++;
             ddo++;
             moo++;
+            cursoro.style.display = 'none';
+            cursorx.style.display = 'block';
             //console.log(cseroo, ddo);
              if (cseroo > 2) {
                 p.innerHTML = "게임끝"
@@ -429,6 +454,8 @@
             cserox++;
             ddx++;
             moo++;
+            cursoro.style.display = 'block';
+            cursorx.style.display = 'none';
             //console.log(cserox, ddx);
              if (cserox > 2) {
                 p.innerHTML = "게임끝"
@@ -465,6 +492,8 @@
             rightdaeo++;
             go++;
             moo++;
+            cursoro.style.display = 'none';
+            cursorx.style.display = 'block';
             //console.log(aseroo, rightdaeo, go);
              if (aseroo > 2) {
                 p.innerHTML = "게임끝"
@@ -499,6 +528,8 @@
             rightdaex++;
             gx++;
             moo++;
+            cursoro.style.display = 'block';
+            cursorx.style.display = 'none';
             //console.log(aserox, rightdaex, gx);
              if (aserox > 2) {
                 p.innerHTML = "게임끝"
@@ -540,6 +571,8 @@
             bseroo++;
             go++;
             moo++;
+            cursoro.style.display = 'none';
+            cursorx.style.display = 'block';
             //console.log(bseroo, go);
              if (bseroo > 2) {
                 p.innerHTML = "게임끝"
@@ -567,6 +600,8 @@
             bserox++;
             gx++;
             moo++;
+            cursoro.style.display = 'block';
+            cursorx.style.display = 'none';
             //console.log(bserox, gx);
              if (bserox > 2) {
                 p.innerHTML = "게임끝"
@@ -604,6 +639,8 @@
             cseroo++;
             go++;
             moo++;
+            cursoro.style.display = 'none';
+            cursorx.style.display = 'block';
             //console.log(leftdaeo, cseroo, go);
              if (leftdaeo > 2) {
                 p.innerHTML = "게임끝"
@@ -638,6 +675,8 @@
             cserox++;
             gx++;
             moo++;
+            cursoro.style.display = 'block';
+            cursorx.style.display = 'none';
             //console.log(leftdaex, cserox, gx);
              if (leftdaex > 2) {
                 p.innerHTML = "게임끝"
@@ -665,3 +704,24 @@
              }
         }
     }
+
+
+    
+    
+    document.addEventListener("mousemove", (mo) => { 
+        const mouseX = mo.clientX;
+        const mouseY = mo.clientY;
+        
+        cursoro.style.left = mouseX + 'px';
+        cursoro.style.top = mouseY + 'px';
+    });
+    document.addEventListener("mousemove", (mx) => { 
+        const mouseA = mx.clientX;
+        const mouseB = mx.clientY;
+        
+        cursorx.style.left = mouseA + 'px';
+        cursorx.style.top = mouseB + 'px';
+    });
+
+
+    
