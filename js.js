@@ -1,25 +1,24 @@
-    var a = document.getElementById("a");
-    var b = document.getElementById("b");
-    var c = document.getElementById("c");
-    var d = document.getElementById("d");
-    var e = document.getElementById("e");
-    var f = document.getElementById("f");
-    var g = document.getElementById("g");
-    var h = document.getElementById("h");
-    var ii = document.getElementById("ii");
+    const a = document.getElementById("a");
+    const b = document.getElementById("b");
+    const c = document.getElementById("c");
+    const d = document.getElementById("d");
+    const e = document.getElementById("e");
+    const f = document.getElementById("f");
+    const g = document.getElementById("g");
+    const h = document.getElementById("h");
+    const ii = document.getElementById("ii");
+    const p = document.getElementById("p");
+    const pp = document.getElementById("pp");
 
-    var p = document.getElementById("p");
-    var pp = document.getElementById("pp");
-
-    var i = 0;    var aa = 0;    var bb = 0;    var cc = 0;
-    var dd = 0;    var ee = 0;    var ff = 0;    var gg = 0;
-    var hh = 0;    var iii = 0;
+    let i = 0;    let aa = 0;    let bb = 0;    let cc = 0;
+    let dd = 0;    let ee = 0;    let ff = 0;    let gg = 0;
+    let hh = 0;    let iii = 0;
     
-    var ax = 0; var ao = 0; var leftdaeo = 0; var leftdaex = 0; 
-    var aseroo = 0; var aserox = 0; var bseroo = 0; var bserox = 0;
-    var rightdaeo = 0; var rightdaex = 0; var cseroo = 0; var cserox = 0;
-    var ddo = 0; var ddx = 0; var go = 0; var gx = 0; var moo = 0;
-    var win; var mooo;
+    let ax = 0; let ao = 0; let leftdaeo = 0; let leftdaex = 0; 
+    let aseroo = 0; let aserox = 0; let bseroo = 0; let bserox = 0;
+    let rightdaeo = 0; let rightdaex = 0; let cseroo = 0; let cserox = 0;
+    let ddo = 0; let ddx = 0; let go = 0; let gx = 0; let moo = 0;
+    let win; let mooo;
 
     const cursoro = document.querySelector("#cursoro");
     const cursorx = document.querySelector("#cursorx");
